@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/trailofbits/algo](https://badges.gitter.im/trailofbits/algo.svg)](https://gitter.im/trailofbits/algo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40AlgoVPN)](https://twitter.com/AlgoVPN)
-[![](https://github.com/trailofbits/algo/workflows/Main/badge.svg?branch=master)](https://github.com/trailofbits/algo/actions)
+[![TravisCI Status](https://api.travis-ci.org/warexify/algo.svg?branch=develop)](https://travis-ci.org/warexify/algo)
 
 Algo VPN is a set of Ansible scripts that simplify the setup of a personal WireGuard and IPsec VPN. It uses the most secure defaults available and works with common cloud providers. See our [release announcement](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/) for more information.
 
@@ -34,9 +34,9 @@ The easiest way to get an Algo server running is to run it on your local system 
 
 2. **Get a copy of Algo.** The Algo scripts will be installed on your local system. There are two ways to get a copy:
 
-    - Download the [ZIP file](https://github.com/trailofbits/algo/archive/master.zip). Unzip the file to create a directory named `algo-master` containing the Algo scripts.
+    - Download the [ZIP file](https://github.com/warexify/algo/archive/develop.zip). Unzip the file to create a directory named `algo-develop` containing the Algo scripts.
 
-    - Run the command `git clone https://github.com/trailofbits/algo.git` to create a directory named `algo` containing the Algo scripts.
+    - Run the command `git clone https://github.com/warexify/algo.git -b develop` to create a directory named `algo` containing the Algo scripts.
 
 3. **Install Algo's core dependencies.** Algo requires that **Python 3.6 or later** and at least one supporting package are installed on your system.
 
@@ -67,7 +67,7 @@ The easiest way to get an Algo server running is to run it on your local system 
 
     - **Windows:** Use the Windows Subsystem for Linux (WSL) to create your own copy of Ubuntu running under Windows from which to install and run Algo. See the [Windows documentation](docs/deploy-from-windows.md).
 
-4. **Install Algo's remaining dependencies.** You'll need to run these commands from the Algo directory each time you download a new copy of Algo. In a Terminal window `cd` into the `algo-master` (ZIP file) or `algo` (`git clone`) directory and run:
+4. **Install Algo's remaining dependencies.** You'll need to run these commands from the Algo directory each time you download a new copy of Algo. In a Terminal window `cd` into the `algo-develop` (ZIP file) or `algo` (`git clone`) directory and run:
     ```bash
     python3 -m virtualenv --python="$(command -v python3)" .env &&
       source .env/bin/activate &&
